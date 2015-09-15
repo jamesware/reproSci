@@ -21,3 +21,11 @@ iris %>%
 
 #  filter(Sepal.Length>5) %>%
 
+###
+library(ggplot2)
+iris %>%
+  ggplot(aes(x=Petal.Length,y=Petal.Width,colour=Species)) +
+  geom_point()
+
+#########
+
